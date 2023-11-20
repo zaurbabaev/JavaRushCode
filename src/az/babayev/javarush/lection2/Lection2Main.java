@@ -8,11 +8,11 @@ public class Lection2Main {
 
         double temperature = -12;
 
-        int secondsInDays=60*60*24;
+        int secondsInDays = 60 * 60 * 24;
         System.out.println(secondsInDays);
 
-        int a=23754;
-        System.out.println(a%10);
+        int a = 23754;
+        System.out.println(a % 10);
 
 
     }

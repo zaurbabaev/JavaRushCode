@@ -8,5 +8,8 @@ public class Lection2_1 {
 
         int number = Integer.parseInt("1234");
         System.out.println(number);
+        System.out.println("na  ");
+
+
     }
 }
