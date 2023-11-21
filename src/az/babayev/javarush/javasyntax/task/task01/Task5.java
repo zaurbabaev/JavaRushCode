@@ -11,6 +11,14 @@ public class Task5 {
         String name;
         int age;
         String city;
-        
+
+        int a;
+        int b = 0;
+        int c;
+        a = 0;
+        b = 7 + a;
+        c = b + 10;
+        System.out.println(c);
+
     }
 }
