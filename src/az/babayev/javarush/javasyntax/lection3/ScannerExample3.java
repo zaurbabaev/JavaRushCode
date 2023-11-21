@@ -1,4 +1,4 @@
-package az.babayev.javarush.lection3;
+package az.babayev.javarush.javasyntax.lection3;
 
 import java.util.Scanner;
 

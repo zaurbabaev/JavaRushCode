@@ -1,4 +1,4 @@
-package az.babayev.javarush.lection2;
+package az.babayev.javarush.javasyntax.lection2;
 
 public class Lection2Main {
     public static void main(String[] args) {
