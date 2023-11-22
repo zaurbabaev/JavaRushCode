@@ -1,19 +1,31 @@
 package az.babayev.javarush.javasyntax.lection2;
 
 public class References2 {
-
     public static void main(String[] args) {
-        int m = 5;
-        int n = 6;
+        Student olga = new Student();
+        olga.name = "Olga";
+        olga.age = 21;
+        Student vera = new Student();
+        vera.name = "Veronika";
+        vera.age = 15;
 
-        System.out.println("M=" + m + " N=" + n);
-        int a = m, b = n;
+        System.out.println("Olga -> " + olga.age);
+        System.out.println("Veronika -> " + vera.age);
 
-        int c = a;
-        a = b;
-        b = c;
+        Student a = olga, b = vera;
 
-        System.out.println("M=" + m + " N=" + n);
+        int c = a.age;
+        a.age = b.age;
+        b.age = c;
+
+        System.out.println("Olga -> " + olga.age);
+        System.out.println("Veronika -> " + vera.age);
+
+
+    }
+
+    public static class Student {
+        public String name;
+        public int age;
     }
 }
-

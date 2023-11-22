@@ -1,21 +1,33 @@
 package az.babayev.javarush.javasyntax.lection2;
 
 public class References {
-
     public static void main(String[] args) {
-        int m = 5;
-        int n = 6;
+        Student olga = new Student();
+        olga.name = "Olga";
+        olga.age = 21;
 
-        System.out.println("M=" + m + " N=" + n);
-        swap(m, n);
-        System.out.println("M=" + m + " N=" + n);
+        Student vera = new Student();
+        vera.name = "Veronika";
+        vera.age = 15;
+
+        System.out.println("Olga -> " + olga.age);
+        System.out.println("Veronika -> " + vera.age);
+
+
+        ageSwap(olga, vera);
+        System.out.println("Olga -> " + olga.age);
+        System.out.println("Veronika -> " + vera.age);
+
     }
 
-    private static void swap(int a, int b) {
-        int c = a;
-        a = b;
-        b = c;
+    public static void ageSwap(Student a, Student b) {
+        int c = a.age;
+        a.age = b.age;
+        b.age = c;
+    }
 
+    public static class Student {
+        String name;
+        int age;
     }
 }
-

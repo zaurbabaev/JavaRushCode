@@ -1,31 +1,21 @@
 package az.babayev.javarush.javasyntax.lection2;
 
 public class Primitives2 {
+
     public static void main(String[] args) {
-        Student olga = new Student();
-        olga.name = "Olga";
-        olga.age = 21;
-        Student vera = new Student();
-        vera.name = "Veronika";
-        vera.age = 15;
+        int m = 5;
+        int n = 6;
 
-        System.out.println("Olga -> " + olga.age);
-        System.out.println("Veronika -> " + vera.age);
-
-        Student a = olga, b = vera;
-
-        int c = a.age;
-        a.age = b.age;
-        b.age = c;
-
-        System.out.println("Olga -> " + olga.age);
-        System.out.println("Veronika -> " + vera.age);
-
-
+        System.out.println("M=" + m + " N=" + n);
+        swap(m, n);
+        System.out.println("M=" + m + " N=" + n);
     }
 
-    public static class Student {
-        public String name;
-        public int age;
+    private static void swap(int a, int b) {
+        int c = a;
+        a = b;
+        b = c;
+
     }
 }
+
