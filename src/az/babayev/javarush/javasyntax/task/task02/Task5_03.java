@@ -1,7 +1,7 @@
 package az.babayev.javarush.javasyntax.task.task02;
 
 /*
-Создай объект типа Cat (кот), объект типа Dog (собака), объект типа Fish (рыбка)
+Создай объект типа ToStringExample (кот), объект типа Dog (собака), объект типа Fish (рыбка)
 и объект типа Woman.Присвой каждому животному владельца (owner).
  */
 public class Task5_03 {

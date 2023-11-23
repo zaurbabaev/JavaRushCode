@@ -1,7 +1,7 @@
 package az.babayev.javarush.javasyntax.task.task02;
 
 /*
-Создай 10 переменных типа Cat и 8 объектов типа Cat.
+Создай 10 переменных типа ToStringExample и 8 объектов типа ToStringExample.
  */
 public class Task5_02 {
     public static void main(String[] args) {
