@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task4;
+package az.babayev.javarush.javasyntax.task.task04;
 
 /*
 Написать код, чтобы правильно считалось количество созданных котов (count)

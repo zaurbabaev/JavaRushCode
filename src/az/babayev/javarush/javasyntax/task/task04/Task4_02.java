@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task4;
+package az.babayev.javarush.javasyntax.task.task04;
 
 /*
 Напиши метод displayClosestToTen. Метод должен выводить на экран ближайшее к 10

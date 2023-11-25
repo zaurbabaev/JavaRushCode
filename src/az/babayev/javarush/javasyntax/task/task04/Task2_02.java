@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task4;
+package az.babayev.javarush.javasyntax.task.task04;
 
 /*
 Напиши код в методе addNewCat, чтобы при его вызове количество

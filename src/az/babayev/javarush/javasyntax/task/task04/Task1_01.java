@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task4;
+package az.babayev.javarush.javasyntax.task.task04;
 
 public class Task1_01 {
     public static void main(String[] args) {

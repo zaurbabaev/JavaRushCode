@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task4;
+package az.babayev.javarush.javasyntax.task.task04;
 
 /*
 Помогите коту обрести имя с помощью метода setName.
