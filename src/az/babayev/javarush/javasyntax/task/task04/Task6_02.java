@@ -21,7 +21,7 @@ public class Task6_02 {
         int fourthNumber = Integer.parseInt(string4);
 //        int result = firstNumber > secondNumber ? firstNumber :
 //                secondNumber > thirdNumber ? secondNumber :
-//                        thirdNumber > fourNumber ? thirdNumber : fourNumber;
+//                        thirdNumber > fourthNumber ? thirdNumber : fourthNumber;
         int result = Math.max(firstNumber, Math.max(secondNumber, Math.max(thirdNumber, fourthNumber)));
         System.out.println(result);
     }
