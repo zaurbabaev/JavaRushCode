@@ -9,5 +9,11 @@ public class ArraysSum {
         }
         System.out.println(sum);
 
+        for (int i = 0; i < numbers.length; i++) {
+            sum+=numbers[i];
+        }
+        System.out.println(sum);
     }
+
+
 }
