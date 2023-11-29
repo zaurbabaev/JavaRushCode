@@ -23,7 +23,10 @@ public class ArraysDemo7 {
             cats[0]=new Cat("Tomas");
             cats[1]=new Cat("Tom");
             cats[2]=new Cat("Tom2");
-            System.out.println(Arrays.toString(cats));
+
+            for (int i = 0; i < cats.length; i++) {
+                System.out.println(cats[i]);
+            }
         }
     }
 }
