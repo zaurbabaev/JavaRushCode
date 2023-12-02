@@ -15,6 +15,19 @@ public class MethodDemo {
             grades[i] = Integer.parseInt(reader.readLine());
         }
         printGrades(grades, "[", ".", "]");
+
+        int max = getMax(grades);
+        System.out.println("Max grade -> " + max);
+    }
+
+    private static int getMax(int[] ints) {
+        int max = Integer.MIN_VALUE;
+        for (int grade : ints) {
+            if (grade > max) {
+                max = grade;
+            }
+        }
+        return max;
     }
 
     private static void printGrades(int[] grades, String leftBrackets, String delimiter, String rightBrackets) {
