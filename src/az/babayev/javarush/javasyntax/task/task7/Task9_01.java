@@ -40,7 +40,6 @@ public class Task9_01 {
                 other.add(number);
             }
         }
-        
         printList(numbers);
         printList(x3);
         printList(x2);
