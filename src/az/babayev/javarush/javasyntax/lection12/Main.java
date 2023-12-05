@@ -22,5 +22,7 @@ public class Main {
         System.out.println(a/b);
         System.out.println(0.0/0.0);
         System.out.println(b/c);
+        float ff=123456789098765432F;
+
     }
 }
