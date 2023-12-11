@@ -13,7 +13,9 @@ public class ArrayListDemo8 {
         boolean contains = number.contains(31);
         System.out.println(contains);
 
+
         var number2 = new ArrayList<>();
+
 
     }
 }
