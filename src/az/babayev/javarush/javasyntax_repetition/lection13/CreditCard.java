@@ -24,20 +24,15 @@ public class CreditCard {
         this.month = month;
         this.holder = holder;
 
-        String cardNumber = Long.toString(number);
-        if (cardNumber.startsWith("4")) {
-            this.paymentSystem = "Visa";
-        } else if (cardNumber.startsWith("5")) {
-            this.paymentSystem = "MasterCard";
-        } else if (cardNumber.startsWith("36")) {
-            this.paymentSystem = "DinersClub";
-        } else if (cardNumber.startsWith("35")) {
-            this.paymentSystem = "JCB";
-        } else {
-            this.paymentSystem = "Unknown";
+        switch (Math.toIntExact(number)) {
+            case 1 -> this.paymentSystem = "Visa";
+            case 5 -> this.paymentSystem = "MasterCard";
+            case 3 -> this.paymentSystem = "DinersClub";
+            case 35 -> this.paymentSystem = "JCB";
+            default -> this.paymentSystem = "Unknown";
+
         }
     }
 }
-
 
 
