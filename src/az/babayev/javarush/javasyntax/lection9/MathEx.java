@@ -15,5 +15,8 @@ public class MathEx {
 
         double e = Math.E;
         System.out.println(e);
+
+        double pow = Math.pow(2, 0.25);
+        System.out.println(pow);
     }
 }
