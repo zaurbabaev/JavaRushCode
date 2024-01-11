@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.lection9;
+package az.babayev.javarush.javasyntax.task.task10;
 /*
 В классе LiteralString объявлено и проинициализировано публичное строковое поле.
 Но строка слишком длинная и неудобочитаемая.
