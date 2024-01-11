@@ -1,4 +1,5 @@
 package az.babayev.javarush.javasyntax.lection9;
+
 /*
 В классе LiteralInteger объявлены четыре публичных поля, которые соответствуют четырем целочисленным типам.
 При объявлении эти поля инициализируются разными значениями — целочисленными литералами.
@@ -7,4 +8,8 @@ package az.babayev.javarush.javasyntax.lection9;
 Можно изменять только знак и тип литерала, не изменяя цифры и их порядок.
  */
 public class LiteralInteger {
+    public byte b = (byte) 128;
+    public short s = (short) 32768;
+    public int i = 1_234_567_890;
+    public long l = 2_345_678_900L;
 }
