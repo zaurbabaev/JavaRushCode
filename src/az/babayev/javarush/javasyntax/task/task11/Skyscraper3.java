@@ -7,8 +7,8 @@ package az.babayev.javarush.javasyntax.task.task11;
 второй — без. Они оба должны инициализировать поля floorsCount и developer.
  */
 public class Skyscraper3 {
-    private int floorsCount;
-    private String developer;
+    private final int floorsCount;
+    private final String developer;
 
     public Skyscraper3() {
         this.floorsCount = 5;
