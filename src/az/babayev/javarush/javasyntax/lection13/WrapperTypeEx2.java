@@ -1,6 +1,6 @@
 package az.babayev.javarush.javasyntax.lection13;
 
-public class WraperTypeEx2 {
+public class WrapperTypeEx2 {
     public static void main(String[] args) {
 
         int maxValue = Integer.MAX_VALUE;
