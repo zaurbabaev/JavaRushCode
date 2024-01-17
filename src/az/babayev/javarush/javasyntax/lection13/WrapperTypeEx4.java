@@ -22,14 +22,16 @@ public class WrapperTypeEx4 {
 
         boolean upperCase = Character.isUpperCase('A');
         System.out.println(upperCase);
+
         char upperCase1 = Character.toUpperCase('a');
         System.out.println(upperCase1);
+        
         char lowerCase1 = Character.toLowerCase('A');
         System.out.println(lowerCase1);
 
         Boolean aTrue = Boolean.TRUE;
         Boolean aFalse = Boolean.FALSE;
-        
+
 
 
     }
