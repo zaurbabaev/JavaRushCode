@@ -25,7 +25,7 @@ public class WrapperTypeEx4 {
 
         char upperCase1 = Character.toUpperCase('a');
         System.out.println(upperCase1);
-        
+
         char lowerCase1 = Character.toLowerCase('A');
         System.out.println(lowerCase1);
 
