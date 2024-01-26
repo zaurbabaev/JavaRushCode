@@ -15,7 +15,7 @@ public class User {
             return -1;
         } else if (name.isEmpty()) {
             return -2;
-        } else if (name.matches(".\\d.")) {
+        } else if (name.matches(".\\d.*")) {
             return -3;
         } else {
             this.name = name;

@@ -86,8 +86,10 @@ public class UserSolution {
         int index = users.indexOf(user);
         if (index == -1) {
             System.out.printf(NOT_FOUND, user.getName());
+        }else {
+
+            System.out.printf(FOUND, user.getName(), users.indexOf(user));
         }
-        System.out.printf(FOUND, user.getName(), users.indexOf(user));
 
     }
 }
