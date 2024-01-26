@@ -1,22 +1,24 @@
-package az.babayev.javarush.javasyntax.task.task15.exception_ex;
+package az.babayev.javarush.javasyntax.task.task15;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 /*
-Программа считывает с консоли номер, находит в журнале соответствующего студента
- и вызывает его отвечать.
-Но есть проблема: если в журнале нет студента с нужным номером, программа
-завершается с исключением ArrayIndexOutOfBoundsException.
-Оберни одну строку в try-catch, чтобы программа продолжала работать.
-В блоке catch выведи в консоли сообщение "Студента с таким номером не существует".
+Программа считывает с консоли номер, находит в журнале соответствующего студента и
+вызывает его отвечать. И даже обрабатывает некорректные числа.
+Но есть еще одна проблема: если введено не целое число, метод parseInt
+бросает NumberFormatException. Оберни часть кода в try-catch так,
+чтобы программа продолжала работу, даже если было введено не целое число.
+И если введено не целое число, выведи в консоль сообщение:
+"Нужно ввести целое число" и выполни continue; для корректной работы цикла.
  */
-public class ExceptionEx1 {
+public class ExceptionExample2 {
     public static final String PROMPT_STRING = "Введите номер студента, или exit для выхода: ";
     public static final String EXIT = "exit";
     public static final String ANSWERING = "Отвечает ";
     public static final String NOT_EXIST = "Студента с таким номером не существует";
+    public static final String INTEGER_REQUIRED = "Нужно ввести целое число";
 
     static List<String> studentsJournal = Arrays.asList(
             "Тимур Мясной"
@@ -33,17 +35,18 @@ public class ExceptionEx1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
         while (true) {
             System.out.print(PROMPT_STRING);
             String input = scanner.nextLine();
             if (input.equalsIgnoreCase(EXIT)) {
                 break;
             }
-            int studentId = Integer.parseInt(input);
             try {
+                int studentId = Integer.parseInt(input);
                 System.out.println(ANSWERING + studentsJournal.get(studentId));
-            } catch (ArrayIndexOutOfBoundsException ex) {
+            } catch (NumberFormatException nfe) {
+                System.out.println(INTEGER_REQUIRED);
+            } catch (Exception ex) {
                 System.out.println(NOT_EXIST);
             }
         }
