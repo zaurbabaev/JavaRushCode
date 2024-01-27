@@ -29,8 +29,10 @@ public class StackEx {
         integers.push(7);                      // 7 əlavə olundu [1,6,7,7,7]
 
         System.out.println(integers);
-        // elementi axtarır varsa indexini  qaytarır yoxdursa -1. Indeksi qaytarmaq sondan saymağa başlayır
-        // ilk indek 1-dən başlayır
+        // elementi axtarır varsa indexini  qaytarır yoxdursa -1.
+        // size hesablanır bizim halımızda 5-dir. elementin indeksini tapırıq
+        // massiv və ya listdəki kimi. 1-i axtarırıq 1 0ci elementdir.
+        // search=(size-index)
         int search = integers.search(1);
         System.out.println(search); // 5 qaytarır
 
