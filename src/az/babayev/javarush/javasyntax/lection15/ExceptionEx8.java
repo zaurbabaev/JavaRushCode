@@ -10,7 +10,7 @@ public class ExceptionEx8 {
 
         BufferedReader reader = null;
         try {
-            reader = new BufferedReader(new FileReader("C:\\Users\\Username\\Desktop\\test.txt"));
+            reader = new BufferedReader(new FileReader("C:\\Users\\Username\\Desktop\\test1.txt"));
 
             String firstString = reader.readLine();
             System.out.println(firstString);

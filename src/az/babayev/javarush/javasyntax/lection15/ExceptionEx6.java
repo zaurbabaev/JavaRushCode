@@ -8,7 +8,7 @@ import java.io.IOException;
 public class ExceptionEx6 {
     public static void main(String[] args) throws IOException {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Username\\Desktop\\test.txt"));
+            BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\Username\\Desktop\\test1.txt"));
 
             System.out.println(366 / 0);
             String firstString = reader.readLine();
