@@ -1,7 +1,5 @@
 package az.babayev.javarush.javasyntax.task.task17.date_time_api.zoned_date_time;
 
-import az.babayev.javarush.javasyntax.lection17.date_time_api.zoneddatetime.ZonedDateTimeExample;
-
 import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -22,12 +20,13 @@ import java.time.format.DateTimeFormatter;
 Europe/Kiev — временная зона.
  */
 public class ZonedDateTimeExample4 {
-    static ZonedDateTime zonedDateTime=ZonedDateTime.now();
+    static ZonedDateTime zonedDateTime = ZonedDateTime.now();
 
     public static void main(String[] args) {
         DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("e d.M.yy HH:mm:ss.n VV");
         String format = dateTimeFormatter.format(zonedDateTime);
         System.out.println(format);
+
     }
 
 }
