@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.task.task17.date_time_api.zoned_date_time;
+package az.babayev.javarush.javasyntax.task.task17.date_time_api.date_time_formatter;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
