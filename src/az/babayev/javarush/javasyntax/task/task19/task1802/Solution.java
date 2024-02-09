@@ -37,6 +37,10 @@ public class Solution {
 
         students.sort(new AgeComparator());
 
+//        students.sort((student1, student2) -> student2.getAge() - student1.getAge());
+
+//        students.sort((s1, s2) -> Integer.compare(s2.getAge(), s1.getAge()));
+
         students.forEach(System.out::println);
     }
 
