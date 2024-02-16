@@ -1,0 +1,8 @@
+package az.babayev.javarush.javacore.task.task2.task1204;
+
+public class Lamp {
+    @Override
+    public String toString() {
+        return "Лампа";
+    }
+}
