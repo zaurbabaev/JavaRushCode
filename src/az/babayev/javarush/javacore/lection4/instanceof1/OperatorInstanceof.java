@@ -1,6 +1,4 @@
-package az.babayev.javarush.javacore.lection4;
-
-import java.io.FileNotFoundException;
+package az.babayev.javarush.javacore.lection4.instanceof1;
 
 public class OperatorInstanceof {
     public static void main(String[] args) {
@@ -16,11 +14,10 @@ public class OperatorInstanceof {
 
         System.out.println("-".repeat(30));
 
-        boolean isInt2=s instanceof Integer;
+        boolean isInt2 = s instanceof Integer;
         System.out.println(isInt2);
 
         System.out.println("-".repeat(30));
-
 
 
     }
