@@ -11,6 +11,7 @@ public class Solution {
         while (true) {
             key = reader.readLine();
             Movie movie = MovieFactory.getMovie(key);
+
             // bizə lazım olanlar yox başqa bir key yazsaq o zaman getMoive() metodu null qaytaracaq
             if (movie == null) {
                 break;
