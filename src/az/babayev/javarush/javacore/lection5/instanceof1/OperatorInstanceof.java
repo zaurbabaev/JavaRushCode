@@ -1,4 +1,4 @@
-package az.babayev.javarush.javacore.lection4.instanceof1;
+package az.babayev.javarush.javacore.lection5.instanceof1;
 
 public class OperatorInstanceof {
     public static void main(String[] args) {
