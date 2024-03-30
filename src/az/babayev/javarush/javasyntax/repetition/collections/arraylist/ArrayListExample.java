@@ -1,4 +1,4 @@
-package az.babayev.javarush.javasyntax.repetition.collections;
+package az.babayev.javarush.javasyntax.repetition.collections.arraylist;
 
 import java.util.ArrayList;
 import java.util.List;
