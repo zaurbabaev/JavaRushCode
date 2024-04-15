@@ -1,0 +1,76 @@
+package az.babayev.javarush.javasyntax.repetition.repetition2.wrappertype.exception.user;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class UserMain {
+    public static final String INPUT_NAME = "\nВведите имя: ";
+    public static final String INPUT_AGE = "Введите возраст пользователя '%s': ";
+
+    public static final String CANNOT_BE_NULL = "Имя не может быть null.";
+    public static final String CANNOT_BE_EMPTY = "Имя не может быть пустым.";
+    public static final String CANNOT_CONTAIN_DIGIT = "Имя не может содержать цифры.";
+    public static final String CANNOT_BE_NEGATIVE = "Возраст не может быть меньше 0.";
+    public static final String CANNOT_BE_TOO_BIG = "Возраст не может быть больше 150.";
+    public static final String UNKNOWN_ERROR = "Неизвестная ошибка.";
+
+    public static final String FOUND = "\nПользователь '%s' найден под индексом %d.\n";
+    public static final String NOT_FOUND = "\nПользователь '%s' не найден.\n";
+
+
+    static List<User> users = new ArrayList<>();
+    static Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) {
+        for (int i = 0; i < 3; i++) {
+            addUser(new User());
+        }
+
+        User userToSearch = new User();
+        userToSearch.setName("Jack");
+
+        findUserIndex(userToSearch);
+    }
+
+    static void addUser(User user) {
+        System.out.print(INPUT_NAME);
+        String name = scanner.nextLine();
+
+        System.out.format(INPUT_AGE, name);
+
+        int age = Integer.parseInt(scanner.nextLine());
+
+        int status = user.setName(name);
+
+        if (status != 0) {
+            System.out.println(switch (status) {
+                case -1 -> CANNOT_BE_NULL;
+                case -2 -> CANNOT_BE_EMPTY;
+                case -3 -> CANNOT_CONTAIN_DIGIT;
+                default -> UNKNOWN_ERROR;
+            });
+        }
+
+        status = user.setAge(age);
+
+        if (status != 0) {
+            System.out.println(switch (status) {
+                case -1 -> CANNOT_BE_NEGATIVE;
+                case -2 -> CANNOT_BE_TOO_BIG;
+                default -> UNKNOWN_ERROR;
+            });
+        }
+        users.add(user);
+
+    }
+
+    private static void findUserIndex(User user) {
+        int indexOf = users.indexOf(user);
+        if (indexOf == -1) {
+            System.out.format(NOT_FOUND, user.getName());
+        } else {
+            System.out.format(FOUND, user.getName(), users.indexOf(user));
+        }
+    }
+}
